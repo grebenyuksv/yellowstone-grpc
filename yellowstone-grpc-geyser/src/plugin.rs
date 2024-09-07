@@ -14,7 +14,7 @@ pub struct Plugin {}
 
 impl GeyserPlugin for Plugin {
     fn name(&self) -> &'static str {
-        concat!(env!("CARGO_PKG_NAME"), "-", env!("CARGO_PKG_VERSION"))
+        concat!(env!("CARGO_PKG_NAME"), "-", env!("CARGO_PKG_VERSION"), "-dummy")
     }
 
     fn on_load(&mut self, config_file: &str, is_reload: bool) -> PluginResult<()> {
